@@ -61,7 +61,7 @@ big_integer::big_integer(const std::string&  s)
 	}
 	std::cout << "s length = " << s.length()<< std::endl;
 	//start at least significant digit
-	for (int k = s.length() -1; k >= 0; k--)
+	for (k = s.length() -1; k >= limit; k--)
 	{
 		if (! isdigit(s[k])) {
 			std::cerr << "badly formed big_integer value =" << s << std::endl;
